@@ -101,11 +101,8 @@ public class MainActivity extends Activity {
 
             AnimationSet set = new AnimationSet(true);
 
-            ScaleAnimation scale = new ScaleAnimation(1, 0.9f, 1, 0.9f);
+            ScaleAnimation scale = new ScaleAnimation(1, 0.9f, 1, 0.9f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
             set.addAnimation(scale);
-
-            TranslateAnimation translate = new TranslateAnimation(0, 40, 0, 50);
-            set.addAnimation(translate);
 
             set.setDuration(2400);
 
